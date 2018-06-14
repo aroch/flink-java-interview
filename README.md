@@ -4,7 +4,7 @@
 The goal of this exercise is to:
 
  * Generate random WalkMeEvents in the stream WalkMeEventSourceFunction.
- * Write the code which aggregates the events in windows of 10 seconds.
+ * Write the code which aggregates the events in (Tumbling) window of 10 seconds.
  * Every 10 seconds print out the total number of events per user in the last 10 seconds. 
 
 ### Steps
