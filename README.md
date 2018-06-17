@@ -3,7 +3,7 @@
 
 The goal of this exercise is to:
 
- * Generate random WalkMeEvents in the stream WalkMeEventSourceFunction.
+ * Generate random WalkMeEvents in the WalkMeEventSourceFunction.
  * Write the code which aggregates the events in (Tumbling) window of 10 seconds.
  * Every 10 seconds print out the total number of events per user in the last 10 seconds. 
 
@@ -11,7 +11,12 @@ The goal of this exercise is to:
 
 * Implement the WalkMeEventSourceFunction class
 * Implement the StreamingJob main function
-* Run the StreamingJob class
+* Run the StreamingJob class:
+
+    ```
+    mvn clean package
+    mvn exec:java -Dexec.mainClass=com.walkme.data.streaming.ex1.StreamingJob
+    ```
 
 ### Expected Output
 ```
